@@ -1,0 +1,86 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6e8efb;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  color: #292727;
+  background-color: #f0eaff;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, p {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+  display: block;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-left: 10px;
+}
+
+.grupo-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #917b56;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7b6747;
+}

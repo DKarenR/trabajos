@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario Completo</title>
+  <link rel="stylesheet" href="../Statics/Styles/styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Formulario Completo</h1>
+    <form id="formulario">
+      <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre">
+      <span class="error" id="error-nombre"></span>
+
+      <label for="edad">Edad</label>
+        <input type="text" id="edad" name="edad" placeholder="Ingresa tu edad">
+      <span class="error" id="error-edad"></span>
+
+      <label for="cp">Código Postal</label>
+        <input type="number" id="cp" name="cp" min="1" max="20000" placeholder="Ingresa tu codigo postal: xxxxxx">
+      <span class="error" id="error-cp"></span>
+
+      <p>Género:</p>
+      <div class="grupo-horizontal">
+          <input type="radio" name="genero" value="masculino"> 
+        <label>Masculino</label>
+          <input type="radio" name="genero" value="femenino">  
+        <label>Femenino</label>
+          <input type="radio" name="genero" value="otro">   
+        <label>Otro</label>
+      </div>
+
+      <p>Intereses (selecciona todos los que apliquen):</p>
+      <div class="grupo-horizontal">
+          <input type="checkbox" name="intereses" value="tecnologia"> 
+        <label>Tecnología</label>
+          <input type="checkbox" name="intereses" value="deportes">   
+        <label>Deportes</label>
+          <input type="checkbox" name="intereses" value="musica">   
+        <label>Música</label>
+          <input type="checkbox" name="intereses" value="arte">   
+        <label>Arte</label> 
+      </div>
+
+
+      <label for="pais">País:</label>
+      <select id="pais" name="pais">
+        <option disabled selected>Selecciona tu país</option>
+        <option value="mexico">México</option>
+        <option value="espana">España</option>
+        <option value="argentina">Argentina</option>
+        <option value="colombia">Colombia</option>
+        <option value="peru">Perú</option>
+        <option value="chile">Chile</option>
+        <option value="venezuela">Venezuela</option>
+        <option value="otros">Otros</option>
+      </select>
+
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+      <label for="imagen">Subir imagen:</label>
+        <input type="file" id="imagen" name="imagen">
+
+      <button type="submit">Enviar Formulario</button>
+    </form>
+  </div>
+
+  <script src="../Dynamics/script.js"></script>
+</body>
+</html>
